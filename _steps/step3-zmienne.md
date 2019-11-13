@@ -110,4 +110,6 @@ Napiszmy w takim razie naszą kolejną stronę:
 
 Jak widzisz, w naszym kodzie używamy zmiennej `wiadomosc`, która wyświetla się po kliknięciu na przycisk `Powiedz coś`. Z kolei kliknięcie na przycisk `Przyjdź` lub `Odejdź` spowoduje, że do naszej zmiennej `wiadomosc` przypisany zostanie inny tekst.
 
+![Buttons](../assets/step-3a.png){:title="Buttons" class="img-responsive"}
+
 Zanim pójdziemy dalej, spróbuj dodać na stronie kolejny przycisk, `Zostań`, po kliknięciu na który wiadomość zostanie zmieniona na `Rozgość się`.

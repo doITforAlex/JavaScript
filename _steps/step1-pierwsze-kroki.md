@@ -43,6 +43,10 @@ Zapisz ten plik i otwórz go w przeglądarce.
 
 Widzisz swój przycisk? Naciśnij na niego, a zobaczysz, że tekst "Naciśnięto przycisk!" pojawił się na stronie.
 
+![Your very first Javascript](../assets/step-1a.png){:title="Your very first Javascript" class="img-responsive"}
+
+![Mind Blown](../assets/mind-blown.gif){:title="Mind Blown" class="img-responsive"}
+
 Co się tak właściwie stało?
 
 Nasz plik to w większości zwykłwy HTML. Kiedy strona ładuje się w przeglądarce, ta czyta plik HTML i wyświetla elementy, które w nim znalazła.

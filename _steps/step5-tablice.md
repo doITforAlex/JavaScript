@@ -36,6 +36,8 @@ Najpierw napiszmy stronę w HTMLu:
 
 Dzięki temu mamy już okno, w którym możemy wpisać nowe imię, przycisk, który doda je do listy i dwa divy - jeden, w którym wyświetla się lista imion i drugi, pokazujący liczbę imion.
 
+![Starting page](../assets/step-5a.png){:title="Starting page" class="img-responsive"}
+
 Teraz zajmijmy się naszym tagiem `<script>`...
 
 ## Tworzenie tablicy
@@ -94,6 +96,8 @@ document.getElementById("liczbaImion").innerText =
 
 A teraz otwórz tę stronę i dodaj do listy kilka imion.
 
+![Some names](../assets/step-5b.png){:title="Some names" class="img-responsive"}
+
 Super!
 
 Jak możesz jednak zauważyć, z naszą stroną jest kilka małych problemów.
@@ -142,3 +146,5 @@ Możliwe rozwiązanie:
 
 </script>
 ```
+
+{:class="solution"}

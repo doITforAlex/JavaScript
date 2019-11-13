@@ -15,13 +15,21 @@ Kiedy kod javascript zmienia jakiś element strony, nie zmienia się kod HTML, a
 
 Uruchom któryś z naszych poprzenich przykładów (na przykład ten z lekcji 1) i otwórz w przeglądarce narzędzia deweloperskie (a w nich zakładkę Elements lub Inspector w Firefoxie).
 
+![Elements/Inspector in DevTools](../assets/step-11a.png){:title="Elements/Inspector in DevTools" class="img-responsive"}
+
 W tym oknie widzisz DOM stworzony dla aktualnej strony, który wygląda podobnie do kodu HTML.
 
 Kiedy jednak wejdziesz w jakieś interakcje ze stroną, zobaczysz w narzędziach deweloperskich, że DOM został zaktualizowany.
 
+![Updated DOM in DevTools](../assets/step-11b.png){:title="Updated DOM in DevTools" class="img-responsive"}
+
 Jeżeli klikniesz prawym przyciskiem myszy gdzieś na swojej stronie, zobaczysz w menu opcję `Wyświetl źródło` albo `Wyświetl źródło strony`. Kliknij na nią. Otworzy się nowe okno z pierwotnym kodem HTML strony, który może różnić się od aktualnego DOMu. To właśnie ten kod HTML posłużył do stworzenia DOMu podczas ładowania strony, ale jakiekolwiek późniejsze zmiany DOMu podczas interakcji ze stroną nie miały na niego wpływu.
 
+![View Source](../assets/step-11b.png){:title="Updated DOM in DevTools" class="img-responsive"}
+
 Wprowadzanie zmian na stronie to po prostu operowanie jej DOMem. Często w ten sposób wybieramy jakieś elementy i zmieniamy ich właściwości albo dodajemy lub usuwamy z nich inne elementy.
+
+Programowanie front-endowe w dużym stopniu wymaga spędzania dużych ilości czasu na badaniu stanu DOMu w narzędziach deweloperskich.
 
 ## Pobieranie węzłów - elementów
 

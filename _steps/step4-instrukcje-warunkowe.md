@@ -59,6 +59,8 @@ function odejdz(){
 
 Odśwież stronę, podaj swoje imię i kliknij na przycisk `Przyjdź` lub `Odejdź`.
 
+![With name input](../assets/step-4a.png){:title="With name input" class="img-responsive"}
+
 Ale co jeśli nie podasz żadnego imienia? W wiadomości zostanie puste miejsce, czego chcemy uniknąć.
 
 Dodajmy do naszego kodu instrukcję warunkową, która zapobiegnie takiej sytuacji.
@@ -90,7 +92,9 @@ Ale jeżeli nasze `imie` nie będzie pustym stringiem, wykonany zostanie kod zna
 
 Teraz nasze funkcje `przyjdz` i `odejdz` mogą się wykonać na dwa różne sposoby.
 
+<div class="aside">
 Tak na marginesie, możesz zauważyć, że w obu funkcjach wykonywane są prawie takie same instrukcje, które różnią się jedynie małymi różnicami. Oczywiście, możemy zmodyfikować nasz kod w taki sposób, że nie będzie zawierał takich powtórzeń - ale tym zajmiemy się w jednej z kolejnych lekcji, poświęconej funkcjom.
+</div>
 
 ## Operatory warunkowe
 
