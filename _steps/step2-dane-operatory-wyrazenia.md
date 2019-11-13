@@ -39,6 +39,8 @@ Narzędzia deweloperskie w Safari są domyślnie wyłączone, ale możesz je uru
 
 Kiedy już otworzysz Narzędzia deweloperskie, otwórz w nich okienko o nazwie Console (po polsku to po prostu konsola).
 
+![Chrome Developer Tools](../assets/step-2a.png){:title="Chrome Developer Tools" class="img-responsive"}
+
 ## Operacje arytmetyczne
 
 Wpisz w konsoli liczbę `205` i wciśnij enter.
@@ -46,6 +48,8 @@ Wpisz w konsoli liczbę `205` i wciśnij enter.
 Jak widzisz, liczba `205` została wyświetlona po raz kolejny. To konsola wykonuje działanie na liczbie, którą w niej wpisujesz i wyświetla wynik. Tak więc, jeżeli wpiszesz w niej po prostu pojedynczą liczbę, to właśnie ta liczba jest wynikiem działania, bo nie wykonujesz na niej żadnych operacji.
 
 Spróbujmy teraz `205 + 103`
+
+![Operations in the Console](../assets/step-2b.png){:title="Operations in the Console" class="img-responsive"}
 
 W konsoli wyświetliła się liczba `308`. W tym wyrażeniu przeprowadziliśmy operację arytmetyczną z użyciem operatora `+`, czyli dodawania.
 
@@ -89,6 +93,8 @@ document.getElementById("okno").innerText = "Naciśnięto przycisk!";
 ```
 
 Kiedy otoczymy jakieś znaki cudzysłowem, tworzymy daną typu **string**, czyli po prostu ciąg liter, liczb czy innych znaków. Możesz wyobrazić sobie string jako banner, na którym napisana jest jakaś treść.
+
+![Bunting](../assets/bunting-string.jpg){:title="Bunting" class="img-responsive imgbox"}
 
 Różne typy wartości mają różne przeznaczenie - już sam typ wskazuje nam, co zawiera dana wartość i w jaki sposób powinna się zachowywać.
 

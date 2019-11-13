@@ -57,6 +57,8 @@ Stwórz nowy plik z następującym kodem HTML.
 
 Zapisz plik i otwórz go w przeglądarce.
 
+![Starting page](../assets/step-7a.png){:title="Starting page" class="img-responsive"}
+
 Na stronie zobaczysz trzy pola do wyboru koloru - jeśli klikniesz na któreś, otworzy się paleta kolorów. Jak to zrobiliśmy? Używając elementów `<input>` o typie (`type`) `color`.
 
 Nasza strona zawiera też trzy puste elementy `<div>`.
@@ -111,7 +113,11 @@ function zmianaKoloru(event) {
 
 Odśwież stronę, otwórz konsolę i kliknij na jeden z inputów, by zmienić kolor elementu strony.
 
-Konsola wyświetli dane o zdarzeniu. Po kliknięciu na mały trójkąt lista danych rozwinie się, dzięki czemu poznasz jego najdrobniejsze szczegóły.
+Konsola wyświetli dane o zdarzeniu.
+
+![Event in the console](../assets/step-7b.png){:title="Event in the console" class="img-responsive"}
+
+Po kliknięciu na mały trójkąt lista danych rozwinie się, dzięki czemu poznasz jego najdrobniejsze szczegóły.
 
 Jak widzisz, obiekt `event` ma wiele właściwości, które szczegółowo go opisują, ale nas na razie interesować będzie jedna z nich - właściwość `target`. `target` to po prostu inny obiekt, który odnosi się do elementu, który wywował określone zdarzenie. Dzięki niemu możemy dowiedzieć się, jaki jest nowy wybrany klor.
 
@@ -169,6 +175,8 @@ Teraz, jeżeli spróbujesz zmienić kolor tła, funkcja `ustawKolor` zostanie wy
 
 Spróbuj to zrobić i wyświetl efekty w konsoli.
 
+![Undefined parameters in the console](../assets/step-7c.png){:title="Undefined parameters in the console" class="img-responsive"}
+
 Jeżeli wywołując funkcję przekazano do niej mniej argumentów niż zadeklarowano w niej parametrów, "nadliczbowe" parametry przyjmą wartość `undefined`, taką samą jak niezainicjalizowane zmienne!
 
 Wykorzystamy tę właściwość w funkcji `ustawKolor`, ponieważ zmiana koloru tła strony odbędzie się trochę inaczej niż zmiana koloru poszczególnych divów.
@@ -189,6 +197,8 @@ Teraz, jeżeli nasze `idElementu` ma wartość undefined, tło strony zmieni si�
 W przeciwnym razie zmieni się kolor wybranego przez nas elementu.
 
 Wypróbuj to!
+
+![Undefined parameters in the console](../assets/step-7d.png){:title="Undefined parameters in the console" class="img-responsive"}
 
 ## Wartości zwracane przez funkcje
 
@@ -218,6 +228,8 @@ console.log(pokazKomunikat(kolor, idElementu));
 
 Zapisz plik i wypróbuj swój kod w przeglądarce. Zauważ, że wartości zwracane poprzez `return` w funkcji `pokazKomunikat` są przekazywane do konsoli poprzez `console.log`.
 
+![getMessage displayed by console](../assets/step-7e.png){:title="getMessage displayed by console" class="img-responsive"}
+
 W więc, zwrócone wartości pojawiły się w miejscu, w którym wywołaliśmy funkcję.
 
 Zróbmy teraz coś bardziej skomplikowanego. W funkcji `ustawKolor` zastąp console.log poniższym kodem:
@@ -230,5 +242,7 @@ document.getElementById("komunikat").innerText = pokazKomunikat(
 ```
 
 Teraz, kiedy zmienisz kolor któregoś elementu, na stronie pojawi się o tym adekwatna wiadomość.
+
+![Final](../assets/step-7f.png){:title="Final" class="img-responsive"}
 
 Jeżeli chcesz, możesz przenieść tę ostatnią linijkę z funkcji `ustawKolor` do funkcji `zmianaKoloru`, ale to wymagałoby kilku małych zmian. Jak myślisz, jakich? Spróbuj to zrobić!

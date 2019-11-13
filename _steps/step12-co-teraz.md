@@ -8,6 +8,8 @@ end: true
 
 Brawo! Znasz już podstawy javascriptu!
 
+![Congratulations!](../assets/neo-kungfu.gif)
+
 Niestety to dopiero czubek góry lodowej, którą jest javascript i tworzenie stron internetowych - jeżeli chcesz dowiedzieć się o nich więcej, poniżej jest kilka fajnych miejsc, które mogą ci w tym pomóc.
 
 ## JavaScript
