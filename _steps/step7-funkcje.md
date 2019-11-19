@@ -257,6 +257,8 @@ height: 100vh;
 ```
 3. Korzystając ze zdobytej wiedzy i google spraw, by po ustawieniu 2 kolorów i kliknięciu `ustaw kolor` zmienił się gradient.
 
+![Task](../assets/step-7g.png){:title="Task" class="img-responsive"}
+
 Poniżej znajdziesz rozwiązanie naszego zadania:
 
 ```html
