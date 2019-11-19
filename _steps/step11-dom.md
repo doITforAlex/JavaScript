@@ -7,6 +7,8 @@ permalink: step11/
 
 ## `Czym jest DOM?`
 
+DOM, nie dom 🏠
+
 DOM to skrót od Document Object Model.
 
 Kiedy strona się ładuje, przeglądarka nie wyświetla bezpośrednio kodu HTML. Zamiast tego odczytuje go i tworzy jego odwzorowanie na stronie. Właśnie te elementy odwzorowujące HTML nazywamy DOMem.
@@ -25,7 +27,7 @@ Kiedy jednak wejdziesz w jakieś interakcje ze stroną, zobaczysz w narzędziach
 
 Jeżeli klikniesz prawym przyciskiem myszy gdzieś na swojej stronie, zobaczysz w menu opcję `Wyświetl źródło` albo `Wyświetl źródło strony`. Kliknij na nią. Otworzy się nowe okno z pierwotnym kodem HTML strony, który może różnić się od aktualnego DOMu. To właśnie ten kod HTML posłużył do stworzenia DOMu podczas ładowania strony, ale jakiekolwiek późniejsze zmiany DOMu podczas interakcji ze stroną nie miały na niego wpływu.
 
-![View Source](../assets/step-11b.png){:title="Updated DOM in DevTools" class="img-responsive"}
+![View Source](../assets/step-11c.png){:title="View Source" class="img-responsive"}
 
 Wprowadzanie zmian na stronie to po prostu operowanie jej DOMem. Często w ten sposób wybieramy jakieś elementy i zmieniamy ich właściwości albo dodajemy lub usuwamy z nich inne elementy.
 
