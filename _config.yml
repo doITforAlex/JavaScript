@@ -10,15 +10,15 @@
 
 # Site settings
 title: "Do IT for Alex"
-workshopname: "Learn Javascript"
-homepage: "https://flynerd.pl"
+workshopname: "Javascript od podstaw"
+homepage: "https://flynerd.pl/alex/"
 email: hello@flynerd.pl
-facebook: ""
+facebook: "https://www.facebook.com/flynerdpl/"
 twitter: ""
 github:  ""
 
 description: > # this means to ignore newlines until "baseurl:"
-  This is an introductory workshop for Javascript
+  Poznaj z nami podstawy Javascript
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
