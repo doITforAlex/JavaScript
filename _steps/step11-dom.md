@@ -86,7 +86,7 @@ Do usunięciu elementu ze strony możesz skorzystać z metody `removeChild()` na
 
 ```javascript
 let rodzic = document.getElementById("listaKotow");
-var dziecko = document.getElementById("kot_432");
+let dziecko = document.getElementById("kot_432");
 rodzic.removeChild(dziecko);
 ```
 
@@ -116,6 +116,15 @@ Są też inne funkcje służące do dodawania dzieci do elementów, chociażby `
 - <https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild>
 - <https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore>
 - <https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append>
+
+### Zadanie: lista zakupów 🛒
+
+Utwórz nowy mini projekt - prostą listę zakupów.
+
+- ✅ Będzie zawierał input na produkt oraz przycisk "dodaj do listy". Przycisk ten spowoduje dodanie nowego elementu (np. elementu `<li>`) Przyda się też `div`/`ul` - rodzic, który będzie przechowywał listę zakupów.
+
+- 🗑️ Rozszerzenie: zakupione produkty chcemy móc usuwać z listy.
+
 
 ## Jeszcze więcej o DOM
 

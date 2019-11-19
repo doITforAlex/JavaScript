@@ -16,6 +16,8 @@ Niestety to dopiero czubek góry lodowej, którą jest javascript i tworzenie st
 
 ### Początkujący
 
+- [Programowanie w JavaScript](https://bit.ly/kurs-JS)
+- [The Complete 2019 Web Development Bootcamp](https://bit.ly/web-dev-bootcamp)
 - [Mozilla Developer Network: Learning Area](https://developer.mozilla.org/en-US/docs/Learn/)
 - [W3 School JavaScript](https://www.w3schools.com/js/)
 - [scotch.io](https://scotch.io/search?q=javascript)
