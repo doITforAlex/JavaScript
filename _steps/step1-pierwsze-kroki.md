@@ -11,7 +11,7 @@ To trochę nudne, więc my zajmiemy się od razu tymi fajniejszymi rzeczami.
 
 Zaczniemy od prostej strony składającej się z przycisku i okna. Nic wielkiego prawda?
 
-Potem napiszemy kod, dzięki któremu to okno zmieni się po tym jak naciśniesz przycisk. 💥💥💥
+Potem napiszemy kod, dzięki któremu to okno zmieni się po tym jak naciśniesz przycisk. 💥
 
 Ale najpierw opiszmy, co tak właściwie robi ten kod, a w kolejnych lekcjach dodamy do tego jeszcze trochę szczegółów i porobimy różne inne fajne rzeczy.
 
