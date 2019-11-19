@@ -2,7 +2,7 @@
 
 Witaj na warsztatach JavaScript od podstaw. 
 
-Mamy nadzieję, że te zajęcia będą dla Ciebie świetną zabawą w odkrywaniu języka Javascript! :smile:
+Mamy nadzieję, że te zajęcia będą dla Ciebie świetną zabawą w odkrywaniu języka Javascript! 😊
 
 Wymagania wstępnie:
 
