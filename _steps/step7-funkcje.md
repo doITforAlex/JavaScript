@@ -246,3 +246,46 @@ Teraz, kiedy zmienisz kolor któregoś elementu, na stronie pojawi się o tym ad
 ![Final](../assets/step-7f.png){:title="Final" class="img-responsive"}
 
 Jeżeli chcesz, możesz przenieść tę ostatnią linijkę z funkcji `ustawKolor` do funkcji `zmianaKoloru`, ale to wymagałoby kilku małych zmian. Jak myślisz, jakich? Spróbuj to zrobić!
+
+#### Zadanie
+
+1. Utwórz nowy plik HTML, który będzie zawierał 2 pola wyboru koloru (góra i dół) i przycisk `ustaw kolor`.
+2. Ustaw CSS strony tak, by body zajmowało 100% wysokości ekranu, oraz miało domyślny kolor tła ustawiony jako czarno-biały gradiet
+```
+background: linear-gradient(#ffffff, #000000);
+height: 100vh;
+```
+3. Korzystając ze zdobytej wiedzy i google spraw, by po ustawieniu 2 kolorów i kliknięciu `ustaw kolor` zmienił się gradient.
+
+Poniżej znajdziesz rozwiązanie naszego zadania:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Warsztaty z JSa!</title>
+  </head>
+  <body style="background: linear-gradient(#ffffff, #000000);height: 100vh;">
+    <div
+      style="padding:10px; margin: 15px; border:1px solid grey; background-color:#ffffff"
+    >
+      Góra:
+      <input id="inputGora" name="gora" type="color" value="#ffffff" />
+      Dół:
+      <input id="inputDol" name="dol" type="color" value="#000000" />
+      <button id="ustaw">Ustaw tlo</button>
+    </div>
+  </body>
+  <script>
+    function ustawKolor() {
+        kolorGora = document.getElementById("inputGora").value
+        kolorDol = document.getElementById("inputDol").value
+        kolorGradient = "linear-gradient(" + kolorGora + "," + kolorDol + ")";
+        document.body.style.background = kolorGradient
+    }
+    document.getElementById("ustaw").onclick = ustawKolor;
+  </script>
+</html>
+```
+{: .solution }

@@ -17,7 +17,7 @@ Ale najpierw opiszmy, co tak właściwie robi ten kod, a w kolejnych lekcjach do
 
 Gotowi? Zaczynamy!
 
-Najpierw stwórz nowy plik HTML - nazwij go jakkolwiek chcesz, byleby miał na końcu rozszerzenie `.html` (proponujemy `index.html`). Potem wrzuć do tego pliku następującą treść:
+Najpierw stwórz nowy plik HTML - nazwij go jakkolwiek chcesz, byleby miał na końcu rozszerzenie `.html`. Potem wrzuć do tego pliku następującą treść:
 
 ```html
 <!DOCTYPE html>

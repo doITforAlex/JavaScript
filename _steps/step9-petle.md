@@ -47,6 +47,8 @@ Stwórzmy nową stronę, na której podasz jaka wiadomość ma się wyświetlić
 
 Spróbuj!
 
+![For loop](../assets/step-9a.png){:title="For loop" class="img-responsive"}
+
 Zwróć tylko uwagę, że jeśli w liczniku podasz liczbę większą niż około 10000, twoja strona prawdopodobnie zwolni, a przy liczbach rzędu 30000 minie sekunda czy dwie zanim strona się zaktualizuje.
 
 Wykonanie pętli jeden raz zajmuje jakiś ułamek sekundy, ale powtórzenie tej czynności dziesiątki tysięcy razy wymaga już trochę czasu.

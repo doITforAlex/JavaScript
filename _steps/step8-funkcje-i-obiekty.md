@@ -29,7 +29,16 @@ console.log(burekSzczeka());
 
 Kiedy przypisujemy funkcję `szczekanie` do zmiennej `burekSzczeka`, `burekSzczeka` w dalszym ciągu jest zmienną, ale teraz jako zmienna zawiera deklarację funkcji. A więc również jest funkcją, która może zostać wywołana. Szaleństwo!
 
-Zwróć uwagę, że podczas przypisywania `szczekanie` do zmiennej `burekSzczeka`, nie wywołujemy funkcji `szczekanie`. Gdybyśmy to zrobili, do funkcji `burekSzczeka` zostałoby przypisane to, co zwraca funkcja `szczekanie` (czyli "hau-hau-hau"), a nie ta funkcja sama w sobie. Jak widzisz, to duża różnica.
+![Bark](../assets/step-8a.png){:title="Bark" class="img-responsive"}
+
+Zwróć uwagę, że podczas przypisywania `szczekanie` do zmiennej `burekSzczeka`, nie wywołujemy funkcji `szczekanie` (nie pojawiają się nawiasy okrągłe). Gdybyśmy to zrobili, do funkcji `burekSzczeka` zostałoby przypisane to, co zwraca funkcja `szczekanie` (czyli "hau-hau-hau"), a nie ta funkcja sama w sobie. Jak widzisz, to duża różnica.
+
+Porównaj:
+
+```javascript
+console.log(burekSzczeka());
+console.log(burekSzczeka);
+```
 
 Właśnie w taki sposób przypisujemy funkcje do zdarzeń. `getElementById` zwraca nam obiekt, który odzwierciedla odpowiedni element HTML ze strony. Funkcje zdarzeń, takie jak `onclick` i `onchange` to właściwości tego obiektu, dzięki którym możesz przypisać do nich cokolwiek zechcesz. Domyślnie mają one wartość null. Kiedy dochodzi do jakiegoś zdarzenia, przeglądarka sprawdza, czy odpowiednia właściwość ma wartość null, i jeżeli nie, próbuje wykonać zawarty w niej kod. Jeżeli przypiszemy do tej właściwości coś innego niż funkcja, dostaniemy błąd w konsoli.
 
@@ -93,7 +102,7 @@ odglosyZwierzat.kaczka();
 No dobrze, spójrzmy jeszcze na kod, którego niedawno używaliśmy:
 
 ```javascript
-document.getElementById(‘przycisk’).onclick = jakasFunkcja;
+document.getElementById("przycisk").onclick = jakasFunkcja;
 ```
 
 W tej jednej linijce bardzo wiele się dzieje.
@@ -105,7 +114,7 @@ W tej jednej linijce bardzo wiele się dzieje.
 I odnosząc to do naszego kodu powyżej - moglibyśmy go równie dobrze zapisać jako:
 
 ```javascript
-let przycisk = document.getElementById(‘przycisk’);
+let przycisk = document.getElementById("przycisk");
 przycisk.onclick = jakasFunkcja;
 ```
 
