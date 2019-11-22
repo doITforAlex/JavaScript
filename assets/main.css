@@ -44,6 +44,10 @@ code { padding: 1px 5px; }
 pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
+img {
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
 /** Wrapper */
 .wrapper { max-width: -webkit-calc(1024px - (30px * 2)); max-width: calc(1024px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
 @media screen and (max-width: 1000px) { .wrapper { max-width: -webkit-calc(1024px - (30px)); max-width: calc(1024px - (30px)); padding-right: 15px; padding-left: 15px; } }
