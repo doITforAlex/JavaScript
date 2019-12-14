@@ -80,9 +80,9 @@ function przyjdz() {
 function odejdz() {
   let imie = document.getElementById('inputZImieniem').value;
   if (imie == '') {
-    wiadomosc = 'Szerokiej drogi tajemniczy nieznajomy!';
+    wiadomosc = 'Szerokiej drogi, tajemniczy nieznajomy!';
   } else {
-    wiadomosc = 'Szerokiej drogi '+imie+'!';
+    wiadomosc = 'Szerokiej drogi, '+imie+'!';
   }
 }
 ```
