@@ -23,7 +23,7 @@ To wszystko jest na razie dosyć abstrakcyjne, więc zróbmy kilka przykładów 
 
 Każda popularna przeglądarka ma interfejs, który pozwala ci na badanie stron internetowych. Właśnie to nazywamy **narzędziami deweloperskimi** (developer/dev tools).
 
-Jednym z takich narzędzi jest konsola, która ma dwie podstawowe funkcje. Po pierwsze, wyświetla wszelkie informacje o błędach i tym podobnych, które wystąpiły na danej stronie. A po drugie, w konsoli możesz bezpośrednio wykonać kod napisany w Javascripcie.
+Jednym z takich narzędzi jest konsola, która ma dwie podstawowe funkcje. Po pierwsze, wyświetla wszelkie informacje o błędach i tym podobnych, które wystąpiły na danej stronie. A po drugie, w konsoli możesz bezpośrednio wykonać kod napisany w JavaScripcie.
 
 Żeby otworzyć narzędzia deweloperskie swojej przeglądarki, wciśnij:
 
@@ -100,7 +100,7 @@ Różne typy wartości mają różne przeznaczenie - już sam typ wskazuje nam, 
 
 Na przykład, wiemy czego oczekiwać po działaniu `100+50`. Ale co z `'100'+'50'`? Spróbuj wpisać to w konsoli.
 
-Javascript rozpoznał, że obie wartości są stringami, więc kiedy je dodajesz, po prostu je ze sobą łączy. Nazywamy to **konkatenacją**.
+JavaScript rozpoznał, że obie wartości są stringami, więc kiedy je dodajesz, po prostu je ze sobą łączy. Nazywamy to **konkatenacją**.
 
 Innym przykładem może być dodanie do siebie imienia i nazwiska jakiejś osoby, przykładowo `'Anna' + ' ' + 'Nowak'`. Zauważ jednak, że połączyliśmy tu trzy stringi. Drugi z nich to string ze spacją, która też jest znakiem. Stringiem może być nie tylko pojedynczy znak, ale też słowo, zdanie albo nawet kilka akapitów - jakikolwiek ciąg znaków, których chcesz użyć. Istnieją także puste stringi, czyli `''` (bez jakiegokolwiek znaku w środku).
 
@@ -123,7 +123,7 @@ Na razie mówiliśmy jedynie o przeprowadzaniu operacji na wartościach tego sam
 Istnieją dwie proste zasady przeprowadzania takich działań:
 
 1. Jeżeli operatorem jest `+`, liczby zostają przekonwertowane na string i wykonywana jest konkatenacja (na przykład: `"Ania" + 2` zostanie przekonwertowane na `"Ania" + "2"` i w wyniku konkatenacji uzyskamy `"Ania2"`).
-2. W każdym innym przypadku Javascript próbuje przekonwertować string na liczbę i wykonać działanie matematyczne. Jeżeli string nie może zostać zmieniony na liczbę, jako wynik zostaniesz znany Ci już `NaN`.
+2. W każdym innym przypadku JavaScript próbuje przekonwertować string na liczbę i wykonać działanie matematyczne. Jeżeli string nie może zostać zmieniony na liczbę, jako wynik zostaniesz znany Ci już `NaN`.
 
 Takie zmiany typów danych nazywamy **konwersją typów**.
 

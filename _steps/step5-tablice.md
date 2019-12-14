@@ -7,7 +7,7 @@ permalink: step5/
 
 Nasze zmienne mogą przechowywać stringi i liczby, co jest super, ale co jeżeli jedna zmienna ma przechować kilka wartości?
 
-W programowaniu często spotykamy się z sytuacją, kiedy nasze dane przechowujemy jako listę informacji - w Javascripcie służy do tego specjalny typ danych, **tablica**.
+W programowaniu często spotykamy się z sytuacją, kiedy nasze dane przechowujemy jako listę informacji - w JavaScripcie służy do tego specjalny typ danych, **tablica**.
 
 Tablice to obiekty (o których powiemy więcej później), które zawierają jakieś wartości w określonej kolejności. A więc tablica może przechowywać nie jedną, a kilka danych.
 
@@ -46,13 +46,13 @@ Pustą tablicę tworzymy używając nawiasów kwadratowych.
 
 Na początku swojego tagu `<script>` stwórz zmienną `imiona` i przypisz do niej początkową wartość - pustą tablicę.
 
-```Javascript
+```JavaScript
 let imiona = [];
 ```
 
 Oczywiście, jeżeli chcesz, możesz stworzyć tablicę, która będzie już zawierała jakieś elementy - oddzielaj je wtedy od siebie przecinkami.
 
-```Javascript
+```JavaScript
 let imiona = ["Karolina", "Asia"];
 ```
 

@@ -47,4 +47,4 @@ Jeżeli spróbujesz odwołać się do właściwości, która nie istnieje, jej w
 
 Jeżeli z kolei spróbujesz przypisać wartość do takiej nieistniejącej właściwości, zostanie ona stworzona.
 
-Javascript i przeglądarki w dużym stopniu korzystają właśnie z obiektów. Każdy element na stronie i każde zdarzenie jest obiektem. Ale o tym dowiemy się za chwilę.
+JavaScript i przeglądarki w dużym stopniu korzystają właśnie z obiektów. Każdy element na stronie i każde zdarzenie jest obiektem. Ale o tym dowiemy się za chwilę.

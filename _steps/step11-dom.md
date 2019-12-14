@@ -13,7 +13,7 @@ DOM to skrót od Document Object Model.
 
 Kiedy strona się ładuje, przeglądarka nie wyświetla bezpośrednio kodu HTML. Zamiast tego odczytuje go i tworzy jego odwzorowanie na stronie. Właśnie te elementy odwzorowujące HTML nazywamy DOMem.
 
-Kiedy kod Javascript zmienia jakiś element strony, nie zmienia się kod HTML, a tylko DOM.
+Kiedy kod JavaScript zmienia jakiś element strony, nie zmienia się kod HTML, a tylko DOM.
 
 Uruchom któryś z naszych poprzenich przykładów (na przykład ten z lekcji 1) i otwórz w przeglądarce narzędzia deweloperskie (a w nich zakładkę Elements lub Inspector w Firefoxie).
 

@@ -5,7 +5,7 @@ title: Pierwsze kroki
 permalink: step1/
 ---
 
-Wiele warsztatów z Javascriptu dla początkujących zaczyna się od zupełnych podstaw, a fajne rzeczy (jak bawienie się stronami internetowymi) zostawia dopiero na koniec.
+Wiele warsztatów z JavaScriptu dla początkujących zaczyna się od zupełnych podstaw, a fajne rzeczy (jak bawienie się stronami internetowymi) zostawia dopiero na koniec.
 
 To trochę nudne, więc my zajmiemy się od razu tymi fajniejszymi rzeczami.
 
@@ -43,7 +43,7 @@ Zapisz ten plik i otwórz go w przeglądarce.
 
 Widzisz swój przycisk? Naciśnij na niego, a zobaczysz, że tekst "Naciśnięto przycisk!" pojawił się na stronie.
 
-![Your very first Javascript](../assets/step-1a.png){:title="Your very first Javascript" class="img-responsive"}
+![Your very first JavaScript](../assets/step-1a.png){:title="Your very first JavaScript" class="img-responsive"}
 
 ![Mind Blown](../assets/mind-blown.gif){:title="Mind Blown" class="img-responsive"}
 
@@ -63,10 +63,10 @@ Nasz program znalazł element o ID `przycisk` i przekazał przeglądarce informa
 
 Tak więc kiedy naciskasz na przycisk, zmienia się tekst na stronie. Kiedy dochodzi do jakiegoś zdarzenia (ang. _event_), nasz kod działa po raz drugi i wykonuje funkcję, którą napisaliśmy na wypadek tego określonego zdarzenia.
 
-Nazywamy to **programowaniem sterowanym zdarzeniami** (*event-driven*) – korzystają z niego programy pisane w Javascripcie.
+Nazywamy to **programowaniem sterowanym zdarzeniami** (*event-driven*) – korzystają z niego programy pisane w JavaScripcie.
 
 Prawie wszystko, co dzieje się w przeglądarce, powoduje wykonanie jakiegoś zdarzenia. Możesz je sobie wyobrazić jako sygnał, że właśnie jakaś rzecz się wydarzyła. Załadowanie się strony, przewijanie jej, kliknięcie na jakiś element - te wszystkie rzeczy są zdarzeniami.
 
 Kiedy piszemy kod, po prostu nakazujemy przeglądarce, co ma robić (jakie funkcje ma wykonać), kiedy dochodzi do określonych zdarzeń.
 
-Teraz już co nieco wiemy, więc zagłębmy się w podstawy samego Javascriptu.
+Teraz już co nieco wiemy, więc zagłębmy się w podstawy samego JavaScriptu.

@@ -32,7 +32,7 @@ A jakie są zasady tworzenia nazw zmiennych?
 - mogą zawierać litery, cyfry, podkreślniki (`_`) i znaki dolara,
 - nie mogą zaczynać się od cyfry,
 - wielkość liter ma znaczenie (przykładowo `wiadomosc` i `Wiadomosc` to dwie różne zmienne),
-- nie mogą być słowami zastrzeżonymi (w Javascripcie takimi słowami są m.in. `let` czy `const`),
+- nie mogą być słowami zastrzeżonymi (w JavaScripcie takimi słowami są m.in. `let` czy `const`),
 - nazwy zmiennych powinny być po angielsku (chociaż dla lepszej czytelności w przykładach będziemy dzisiaj używać polskich nazw, ale bez polskich znaków),
 - jeżeli nazwa zmiennej składa się z kilku słów, zapisujemy ją w formie **camelCase** (tzw. notacja wielbłądzia, taki zapis to na przykład _`nazwaZmiennej`_) albo snake_case (nazwa mówi sama za siebie, taki zapis to na przykład _`nazwa_zmiennej`_) - zwykle spotkasz się jednak z zapisem camelCase.
 

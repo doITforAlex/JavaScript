@@ -37,10 +37,10 @@ Do tego wykorzystujemy **funkcje**, które są już wbudowane w język programow
 
 ## Programowanie w przeglądarce internetowej
 
-Przeglądarki internetowe zapewniają nam pewną "standardową bibliotekę" funkcji, które możemy wykorzystać do robienia różnych ciekawych rzeczy w Javascripcie.
+Przeglądarki internetowe zapewniają nam pewną "standardową bibliotekę" funkcji, które możemy wykorzystać do robienia różnych ciekawych rzeczy w JavaScripcie.
 
 Takich funkcji jest naprawdę wiele, ale dzisiaj będziemy zajmować się tymi, które nazywamy **Document Object Model API** - albo w skrócie po prostu **DOM API**. Skrót **API** oznacza interfejs programistyczny aplikacji, czyli to po prostu takie mądre określenie na funkcje, które pozwalają ci na działanie z programem.
-Z kolei **DOM** to odwzorowanie strony (dokumentu), które widzimy z poziomu Javascriptu.
+Z kolei **DOM** to odwzorowanie strony (dokumentu), które widzimy z poziomu JavaScriptu.
 
 DOM API posiada pewne funkcje, których możemy używać do odczytywania i zmieniania zawartości strony. Właśnie za ich pomocą będziemy wyświetlać informacje użytkownikom i pozyskiwać je od nich.
 

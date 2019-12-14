@@ -67,7 +67,7 @@ Ale co jeśli nie podasz żadnego imienia? W wiadomości zostanie puste miejsce,
 
 Dodajmy do naszego kodu instrukcję warunkową, która zapobiegnie takiej sytuacji.
 
-```Javascript
+```JavaScript
 function przyjdz() {
   let imie = document.getElementById('inputZImieniem').value;
   if (imie == '') {
@@ -151,7 +151,7 @@ Tak samo jak w przypadku operatora `&&`, używając operatora `||` możesz łąc
 
 W przeciwieństwie do operatorów `&&` i `||`, negacja logiczna umieszczana jest przed wyrażeniem, żeby odwrócić jego wartość logiczną (z `true` na `false` albo z `false` na `true`).
 
-```Javascript
+```JavaScript
 if (!zgodaUzytkownika) {
 
 }
@@ -171,7 +171,7 @@ I tak, przykładowo, załóżmy, że chcemy stworzyć formularz, w którym:
 
 Poniższe wyrażenie `if` nie działa jednak do końca tak, jak byśmy chcieli.
 
-```Javascript
+```JavaScript
 if (wiek >= 18 || zgodaRodzica && zgodaUzytkownika) {
 
 }
