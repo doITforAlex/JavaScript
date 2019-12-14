@@ -2,7 +2,7 @@
 
 Witaj na warsztatach JavaScript od podstaw. 
 
-Mamy nadzieję, że te zajęcia będą dla Ciebie świetną zabawą w odkrywaniu języka Javascript! 😊
+Mamy nadzieję, że te zajęcia będą dla Ciebie świetną zabawą w odkrywaniu języka JavaScript! 😊
 
 Wymagania wstępnie:
 
@@ -11,13 +11,13 @@ Wymagania wstępnie:
 
 Jeśli nie masz wymaganych podstaw zacznij od poznania języka HTML.
 
-Warsztaty mają na celu nauczyć Cię podstaw języka Javascript i jego użycia w przeglądarce. Jest to prosty start, który pozwala łatwo pójść dalej - tworzyć interaktywne strony www, rozwijąć się w kierunku front-end developmentu.
+Warsztaty mają na celu nauczyć Cię podstaw języka JavaScript i jego użycia w przeglądarce. Jest to prosty start, który pozwala łatwo pójść dalej - tworzyć interaktywne strony www, rozwijąć się w kierunku front-end developmentu.
 
 ## Dlaczego JavaScript? 💥
 
 JavaScript jest obecnie wszędzie. Jest wbudowany w Twoją przeglądarkę - więc wykonuje się po tzw. stronie klienta (front-end). Istnieje również Node.JS, który pozwala również programowanie po stronie serwera (backend), ale tym nie będziemy się dzisiaj zajmować.
 
-Przyszłość jest oczywiście napisana w JS, więc lepsze pytanie brzmi: dlaczego nie Javascript?
+Przyszłość jest oczywiście napisana w JS, więc lepsze pytanie brzmi: dlaczego nie JavaScript?
 
 ## Co będziemy robić 🔮
 

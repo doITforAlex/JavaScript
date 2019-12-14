@@ -19,6 +19,7 @@ A więc, pobawmy się funkcjami tworząc kolejną aplikację.
 Czego się przy okazji nauczymy?
 
 - **deklarowania** funkcji,
+<!-- w sumie raczej definiowania – deklarowanie było w C/C++, żeby powiedzieć "później napiszę funkcję, która przyjmuje takie parametry i zwraca taki typ" -->
 - **wywoływania** funkcji,
 - **parametrów** i **argumentów** funkcji,
 - **wartości zwracanych** przez funkcje.
@@ -54,16 +55,23 @@ Stwórz nowy plik z następującym kodem HTML.
   <script></script>
 </html>
 ```
+<!-- Inline styles, serio?
+Skoro wszystko i tak ma identyfikatory, to czeemu by tego nie przenieść do bloku <style>?
+To może być nawet bardziej zrozumiałe dla uczestników, tym bardziej, że na warsztatach HTML/CSS
+w ogóle nie pojawił się atrybut style="...". -->
 
 Zapisz plik i otwórz go w przeglądarce.
 
 ![Starting page](../assets/step-7a.png){:title="Starting page" class="img-responsive"}
 
-Na stronie zobaczysz trzy pola do wyboru koloru - jeśli klikniesz na któreś, otworzy się paleta kolorów. Jak to zrobiliśmy? Używając elementów `<input>` o typie (`type`) `color`.
+Na stronie zobaczysz trzy pola do wyboru koloru - jeśli klikniesz na któreś, otworzy się paleta kolorów.
+Jak to zrobiliśmy? Używając elementów `<input>` typu (`type`) `color`.
 
 Nasza strona zawiera też trzy puste elementy `<div>`.
 
-Zwróć uwagę, że każdy `<input>` ma swój atrybut `name`. Dwa z nich są takie same jak atrybuty `id` pustych divów, a trzeci to po prostu `tlo`. Te informacje przydadzą nam się później - będziemy wiedzieli, który input zmieniający kolor jest powiązany z którym elementem strony.
+Zwróć uwagę, że każdy `<input>` ma swój atrybut `name`.
+Dwa z nich są takie same jak atrybuty `id` pustych divów, a trzeci to po prostu `tlo`.
+Te informacje przydadzą nam się później - będziemy wiedzieli, który input zmieniający kolor jest powiązany z którym elementem strony.
 
 Teraz w tagu `<script>` dodajmy kod, dzięki któremu po wyborze koloru, taki sam kolor przybierze określony element strony.
 
@@ -76,12 +84,15 @@ A więc, zadeklarujmy nową funkcję `zmianaKoloru`:
 ```javascript
 function zmianaKoloru(event) {}
 ```
+<!-- Nie lepiej `zmienKolor`?
+We wszystkich poprzednich przykładach nazwy funkcji były w formie rozkazującej
+i tak się chyba zwykle pisze. -->
 
 Do deklarowania funkcji używamy:
 
 1. Słowa kluczowego `function`.
 2. Nazwy nowej funkcji, `zmianaKoloru`.
-3. Opcjonalnie listy parametrów w nawiasach okrągłych, `(event)`
+3. Opcjonalnie listy parametrów w nawiasach okrągłych, `(event)` <!-- To sugeruje, że nawiasy też można opuścić -->
 4. Ciała funkcji w nawiasach klamerkowych, `{` `}`
 
 Funkcja `zmianaKoloru` jeszcze nic nie robi, ale i tak możemy ją już przypisać do wydarzenia `onchange` na każdym z naszych inputów.
@@ -96,7 +107,13 @@ document.getElementById("inputKolorRzad2").onchange = zmianaKoloru;
 
 **Argumenty** pozwalają nam na korzystanie z pewnych wartości podczas wykonywania funkcji. Nazywamy to zwykle **przekazywaniem argumentów**.
 
-**Parametry** pozwalają ci na odnoszenie się do tych wartości wewnątrz funkcji podczas jej deklarowania.
+**Parametry** pozwalają Ci na odnoszenie się do tych wartości wewnątrz funkcji podczas jej deklarowania.
+
+<!-- Czy jest sens się rozpisywać o tym rozrónieniu? Mam wrażenie, że wielu programistów
+(w tym ja) używa nazw "parametr" i "argument" wymiennie.
+
+https://stackoverflow.com/questions/156767/whats-the-difference-between-an-argument-and-a-parameter
+-->
 
 Nasza funkcja `zmianaKoloru` ma jeden parametr, `event` (po polsku _zdarzenie_).
 Funkcje powiązane ze zdarzeniami są wykonywane, kiedy dochodzi do określonego zdarzenia. Kiedy to się wydarzy, przeglądarka przekaże informacje o tym wydarzeniu jako argument funkcji.
@@ -129,7 +146,7 @@ function zmianaKoloru(event) {
 }
 ```
 
-No dobrze, teraz nasza funkcja `zmianaKoloru` ma informacje, których potrzebuje - nazwę inputa i nowy kolor. Żeby uaktualnić nasz kolor stworzymy jednak nową funkcję i ją stąd wywołamy.
+No dobrze, teraz nasza funkcja `zmianaKoloru` ma informacje, których potrzebuje - nazwę inputa i nowy kolor. Żeby uaktualnić nasz kolor, stworzymy jednak nową funkcję i ją stąd wywołamy.
 
 Zadeklarujmy szybko nową funkcję o pustym ciele:
 
@@ -147,12 +164,12 @@ Wywoływanie funkcji jest naprawdę proste - po prostu podajesz nazwę funkcji, 
 
 A więc, zmieńmy funkcję `zmianaKoloru`, tak, by wywoływała funkcję `ustawKolor`, która na razie będzie tylko wyświetlała w konsoli swoje parametry.
 
-```Javascript
-function ustawKolor(kolor, idElementu){
+```javascript
+function ustawKolor(kolor, idElementu) {
   console.log(kolor, idElementu);
 }
 
-function zmianaKoloru(event){
+function zmianaKoloru(event) {
   ustawKolor(event.target.value, event.target.name);
 }
 ```
@@ -192,6 +209,7 @@ function ustawKolor(kolor, idElementu) {
   }
 }
 ```
+<!-- Nie lepiej `document.body.style.backgroundColor`? -->
 
 Teraz, jeżeli nasze `idElementu` ma wartość undefined, tło strony zmieni się na wybrany przez nas `kolor`.
 W przeciwnym razie zmieni się kolor wybranego przez nas elementu.
@@ -218,11 +236,11 @@ function pokazKomunikat(kolor, idElementu) {
 }
 ```
 
-Kiedy funkcja natyka się na słowo kluczowe `return`, natychmiast przestaje działać i przekazuje określoną wartość z powrotem do kodu, który ją wywołał.
+Kiedy funkcja natyka się na słowo kluczowe `return`, natychmiast kończy działanie i przekazuje określoną wartość z powrotem do kodu, który ją wywołał.
 
 Wywołajmy teraz tę funkcję w funkcji `ustawKolor` i wyświetlmy efekty w konsoli. W tym celu na końcu ciała funkcji `ustawKolor` dodaj poniższą linijkę kodu:
 
-```Javascript
+```javascript
 console.log(pokazKomunikat(kolor, idElementu));
 ```
 
@@ -230,9 +248,9 @@ Zapisz plik i wypróbuj swój kod w przeglądarce. Zauważ, że wartości zwraca
 
 ![getMessage displayed by console](../assets/step-7e.png){:title="getMessage displayed by console" class="img-responsive"}
 
-W więc, zwrócone wartości pojawiły się w miejscu, w którym wywołaliśmy funkcję.
+A więc, zwrócone wartości pojawiły się w miejscu, w którym wywołaliśmy funkcję.
 
-Zróbmy teraz coś bardziej skomplikowanego. W funkcji `ustawKolor` zastąp console.log poniższym kodem:
+Zróbmy teraz coś bardziej skomplikowanego. W funkcji `ustawKolor` zastąp `console.log` poniższym kodem:
 
 ```javascript
 document.getElementById("komunikat").innerText = pokazKomunikat(
@@ -250,12 +268,12 @@ Jeżeli chcesz, możesz przenieść tę ostatnią linijkę z funkcji `ustawKolor
 #### Zadanie
 
 1. Utwórz nowy plik HTML, który będzie zawierał 2 pola wyboru koloru (góra i dół) i przycisk `ustaw kolor`.
-2. Ustaw CSS strony tak, by body zajmowało 100% wysokości ekranu, oraz miało domyślny kolor tła ustawiony jako czarno-biały gradiet
+2. Ustaw CSS strony tak, by body zajmowało 100% wysokości ekranu, oraz miało domyślny kolor tła ustawiony jako czarno-biały gradient:
 ```
 background: linear-gradient(#ffffff, #000000);
 height: 100vh;
 ```
-3. Korzystając ze zdobytej wiedzy i google spraw, by po ustawieniu 2 kolorów i kliknięciu `ustaw kolor` zmienił się gradient.
+3. Korzystając ze zdobytej wiedzy i Google'a spraw, by po ustawieniu 2 kolorów i kliknięciu `ustaw kolor` zmienił się gradient.
 
 ![Task](../assets/step-7g.png){:title="Task" class="img-responsive"}
 
@@ -281,10 +299,10 @@ Poniżej znajdziesz rozwiązanie naszego zadania:
   </body>
   <script>
     function ustawKolor() {
-        kolorGora = document.getElementById("inputGora").value
-        kolorDol = document.getElementById("inputDol").value
+        kolorGora = document.getElementById("inputGora").value;
+        kolorDol = document.getElementById("inputDol").value;
         kolorGradient = "linear-gradient(" + kolorGora + "," + kolorDol + ")";
-        document.body.style.background = kolorGradient
+        document.body.style.background = kolorGradient;
     }
     document.getElementById("ustaw").onclick = ustawKolor;
   </script>

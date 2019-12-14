@@ -13,7 +13,7 @@ Tag `<script>` może być używany nie tylko do pisania kodu bezpośrednio wewn�
 Jak to zrobić?
 
 1. Umieść swój kod w osobnym pliku. Zwykle ma on rozszerzenie `.js` i powinien być odpowiednio nazwany.
-2. W tagu `<script>` użyj atrybutu src, który określi ścieżkę do twojego pliku z kodem.
+2. W tagu `<script>` użyj atrybutu src, który określi ścieżkę do Twojego pliku z kodem.
 
 Zmodyfikujmy w ten sposób nasz pierwszy przykład z lekcji 1:
 

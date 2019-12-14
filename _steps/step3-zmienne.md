@@ -11,9 +11,9 @@ A co w sytuacji, kiedy jeszcze nie znamy danej wartości, a i tak chcemy jej uż
 
 **Zmienne** to nazwane "pudełka", w których przechowywane sa nasze dane.
 
-Żeby stworzyć nową zmienną musisz zadeklarować jej nazwę z użyciem słowa kluczowego `let` (dla zmiennych, które będziemy modyfikować) lub `const` (dla zmiennych, które nie będą się zmieniać, ciągle będą miały jedną i tę samą wartość):
+Żeby stworzyć nową zmienną, musisz zadeklarować jej nazwę z użyciem słowa kluczowego `let` (dla zmiennych, które będziemy modyfikować) lub `const` (dla zmiennych, które nie będą się zmieniać, ciągle będą miały jedną i tę samą wartość):
 
-```javacript
+```javascript
 let wiadomosc;
 ```
 
@@ -21,7 +21,7 @@ Stworzyliśmy w ten sposób nową zmienną o nazwie `wiadomosc`.
 
 W starszym kodzie możesz zobaczyć też, że zmienne tworzono za pomocą innego słowa kluczowego, `var`, na przykład:
 
-```javacript
+```javascript
 var wiadomosc;
 ```
 
@@ -30,11 +30,11 @@ Jest to jednak przestarzały zapis, a obecnie używa się słów `let` i `const`
 A jakie są zasady tworzenia nazw zmiennych?
 
 - mogą zawierać litery, cyfry, podkreślniki (`_`) i znaki dolara,
-- muszą zaczynać się od litery,
+- nie mogą zaczynać się od cyfry,
 - wielkość liter ma znaczenie (przykładowo `wiadomosc` i `Wiadomosc` to dwie różne zmienne),
-- nie mogą być słowami zastrzeżonymi (w javascript takimi słowami są m.in. `let` czy `const`),
+- nie mogą być słowami zastrzeżonymi (w JavaScripcie takimi słowami są m.in. `let` czy `const`),
 - nazwy zmiennych powinny być po angielsku (chociaż dla lepszej czytelności w przykładach będziemy dzisiaj używać polskich nazw, ale bez polskich znaków),
-- jeżeli nazwa zmiennej składa się z kilku słów, zapisujemy ją w formie **camelCase** (tzw. notacja wielbłądzia, taki zapis to na przykład _`nazwaZmiennej`_) albo kebab-case (nazwa mówi sama za siebie, taki zapis to na przykład _`nazwa-zmiennej`_) - zwykle spotkasz się jednak z zapisem camelCase.
+- jeżeli nazwa zmiennej składa się z kilku słów, zapisujemy ją w formie **camelCase** (tzw. notacja wielbłądzia, taki zapis to na przykład _`nazwaZmiennej`_) albo snake_case (nazwa mówi sama za siebie, taki zapis to na przykład _`nazwa_zmiennej`_) - zwykle spotkasz się jednak z zapisem camelCase.
 
 Po stworzeniu zmiennej możesz przypisać do niej jakąś wartość za pomocą **operatora przypisania**, czyli znaku `=`.
 

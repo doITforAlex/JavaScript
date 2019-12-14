@@ -1,1 +1,1 @@
-# Javascript od podstaw
+# JavaScript od podstaw

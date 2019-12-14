@@ -41,9 +41,10 @@ kot.waga = kot.waga - 0.2;
 
 console.log(kot.imie + " naprawdę nienawidzi " + kot.nienawidzi);
 ```
+<!-- Czy `console.log` było gdzieś wcześniej wytłumaczone? -->
 
 Jeżeli spróbujesz odwołać się do właściwości, która nie istnieje, jej wartością będzie `undefined`.
 
 Jeżeli z kolei spróbujesz przypisać wartość do takiej nieistniejącej właściwości, zostanie ona stworzona.
 
-Javascript i przeglądarki w dużym stopniu korzystają właśnie z obiektów. Każdy element na stronie i każde zdarzenie jest obiektem. Ale o tym dowiemy się za chwilę.
+JavaScript i przeglądarki w dużym stopniu korzystają właśnie z obiektów. Każdy element na stronie i każde zdarzenie jest obiektem. Ale o tym dowiemy się za chwilę.
