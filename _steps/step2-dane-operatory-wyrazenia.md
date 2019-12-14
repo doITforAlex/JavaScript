@@ -5,7 +5,7 @@ title: Dane, operatory, wyrazenia
 permalink: step2/
 ---
 
-Większość twojego kodu będzie opierać się na manipulowaniu albo odczytywaniu różnych danych, które mogą pochodzić z pliku, od jakiegoś trzeciego podmiotu albo od użytkownika, który zaznaczył coś na stronie czy wpisał coś w okienku.
+Większość Twojego kodu będzie opierać się na manipulowaniu albo odczytywaniu różnych danych, które mogą pochodzić z pliku, od jakiegoś trzeciego podmiotu albo od użytkownika, który zaznaczył coś na stronie czy wpisał coś w okienku.
 
 Te dane mogą mieć różne typy - mogą nimi być liczby, tekst itd. Dla przykładu, liczba `5` i napis `'Kliknij przycisk'` to dane dwóch różnych typów.
 
@@ -21,7 +21,7 @@ To wszystko jest na razie dosyć abstrakcyjne, więc zróbmy kilka przykładów 
 
 ## Narzędzia deweloperskie przeglądarki (dev tools)
 
-Każda popularna przeglądarka ma interfejs, który pozwala ci na badanie stron internetowych. Właśnie to nazywamy **narzędziami deweloperskimi** (developer/dev tools).
+Każda popularna przeglądarka ma interfejs, który pozwala Ci na badanie stron internetowych. Właśnie to nazywamy **narzędziami deweloperskimi** (developer/dev tools).
 
 Jednym z takich narzędzi jest konsola, która ma dwie podstawowe funkcje. Po pierwsze, wyświetla wszelkie informacje o błędach i tym podobnych, które wystąpiły na danej stronie. A po drugie, w konsoli możesz bezpośrednio wykonać kod napisany w JavaScripcie.
 

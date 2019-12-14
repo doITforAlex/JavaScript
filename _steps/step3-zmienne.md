@@ -11,7 +11,7 @@ A co w sytuacji, kiedy jeszcze nie znamy danej wartości, a i tak chcemy jej uż
 
 **Zmienne** to nazwane "pudełka", w których przechowywane sa nasze dane.
 
-Żeby stworzyć nową zmienną musisz zadeklarować jej nazwę z użyciem słowa kluczowego `let` (dla zmiennych, które będziemy modyfikować) lub `const` (dla zmiennych, które nie będą się zmieniać, ciągle będą miały jedną i tę samą wartość):
+Żeby stworzyć nową zmienną, musisz zadeklarować jej nazwę z użyciem słowa kluczowego `let` (dla zmiennych, które będziemy modyfikować) lub `const` (dla zmiennych, które nie będą się zmieniać, ciągle będą miały jedną i tę samą wartość):
 
 ```javascript
 let wiadomosc;

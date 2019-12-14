@@ -81,7 +81,7 @@ Deklaracja pątli składa się ze słowa kluczowego `for` i trzech wyrażeń w n
 
 Po tym kiedy nasza pętla wykonała się już określoną liczbę razy, ustawiamy tekst w `oknoZWiadomoscia` na nasz `rezultat`.
 
-Czy myślisz, że uda ci się zmienić działanie naszej pętli w taki sposób, że będzie liczyć od `liczbaPowtorzen` do `1`, a nie od `0` do `liczbaPowtorzen`? Spróbuj!
+Czy myślisz, że uda Ci się zmienić działanie naszej pętli w taki sposób, że będzie liczyć od `liczbaPowtorzen` do `1`, a nie od `0` do `liczbaPowtorzen`? Spróbuj!
 
 ### Co tak wolno?
 
@@ -109,7 +109,7 @@ Spróbujmy.
 
 Niestety nasz kod nie działa. Dlaczego?
 
-Zawartość strony może być zaktualizowana tylko po wykonaniu kodu javascript - musi więc czekać, aż ten skończy powtarzanie pętli. Tak w dużym uproszczeniu, jeżeli twój kod potrzebuje dużo czasu na wykonanie się, na stronie nic będzie mogło się w tym czasie wydarzyć. A więc nauczka na przyszłość - unikaj długich pętli!
+Zawartość strony może być zaktualizowana tylko po wykonaniu kodu javascript - musi więc czekać, aż ten skończy powtarzanie pętli. Tak w dużym uproszczeniu, jeżeli Twój kod potrzebuje dużo czasu na wykonanie się, na stronie nic będzie mogło się w tym czasie wydarzyć. A więc nauczka na przyszłość - unikaj długich pętli!
 
 ### Inne rodzaje pętli
 
