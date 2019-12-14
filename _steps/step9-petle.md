@@ -26,7 +26,7 @@ Stwórzmy nową stronę, na której podasz jaka wiadomość ma się wyświetlić
     <input type="text" id="wiadomosc" placeholder="Co chcesz napisać?" />
     <input type="text" id="licznik" placeholder="Ile razy?" />
     <button id="przycisk">Pisz!</button>
-    <pre id="oknoZWiadomoscia" />
+    <pre id="oknoZWiadomoscia"></pre>
   </body>
 
   <script>
@@ -77,7 +77,7 @@ Deklaracja pątli składa się ze słowa kluczowego `for` i trzech wyrażeń w n
    W naszym przykładzie oznacza on, że kiedy wartość `i` jest mniejsza lub równa niż `liczbaPowtorzen`, pętla wykonuje się po raz kolejny.
 
 3. Trzecim wyrażeniem jest wyrażenie inkrementacji: `i++`. Wykonuje się ono po wykonaniu kodu z ciała pętli.
-   W pętli powyżej po każdym dodaniu kolejnej wiadomości do zmiennej `output`, nasz licznik `i` zwiększa się o 1 (zapis `i++` oznacza to samo co `i + 1`).
+   W pętli powyżej po każdym dodaniu kolejnej wiadomości do zmiennej `output`, nasz licznik `i` zwiększa się o 1 (zapis `i++` oznacza to samo co `i = i + 1`).
 
 Po tym kiedy nasza pętla wykonała się już określoną liczbę razy, ustawiamy tekst w `oknoZWiadomoscia` na nasz `rezultat`.
 

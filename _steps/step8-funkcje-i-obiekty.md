@@ -40,7 +40,7 @@ console.log(burekSzczeka());
 console.log(burekSzczeka);
 ```
 
-Właśnie w taki sposób przypisujemy funkcje do zdarzeń. `getElementById` zwraca nam obiekt, który odzwierciedla odpowiedni element HTML ze strony. Funkcje zdarzeń, takie jak `onclick` i `onchange` to właściwości tego obiektu, dzięki którym możesz przypisać do nich cokolwiek zechcesz. Domyślnie mają one wartość null. Kiedy dochodzi do jakiegoś zdarzenia, przeglądarka sprawdza, czy odpowiednia właściwość ma wartość null, i jeżeli nie, próbuje wykonać zawarty w niej kod. Jeżeli przypiszemy do tej właściwości coś innego niż funkcja, dostaniemy błąd w konsoli.
+Właśnie w taki sposób przypisujemy funkcje do zdarzeń. `getElementById` zwraca nam obiekt, który odzwierciedla odpowiedni element HTML ze strony. Funkcje zdarzeń, takie jak `onclick` i `onchange` to właściwości tego obiektu, dzięki którym możesz przypisać do nich cokolwiek zechcesz. Domyślnie mają one wartość `null`. Kiedy dochodzi do jakiegoś zdarzenia, przeglądarka sprawdza, czy odpowiednia właściwość ma wartość `null`, i jeżeli nie, próbuje wykonać zawarty w niej kod. Jeżeli przypiszemy do tej właściwości coś innego niż funkcja, dostaniemy błąd w konsoli.
 
 ## Wyrażenia funkcyjne
 
@@ -70,7 +70,7 @@ To dosyć wygodna metoda na upraszczanie naszego kodu, gdy potrzebna jest nam ja
 
 Oczywiście, jeżeli możemy przypisywać funkcje do zmiennych, to możemy je przypisywać też jako właściwości obiektów.
 
-Tym właśnie jest `getElementById`, właściwością obiektu `document` .
+Tym właśnie jest `getElementById`, właściwością obiektu `document`.
 
 Spójrz na przykład poniżej: mamy obiekt, którego właściwościami są trzy funkcje, przypisane na trzy różne sposoby - jako deklaracja funkcji, wyrażenie funkcyjne przypisane do zmiennej i wyrażenie funkcyjne przypisane bezpośrednio do właściwości.
 
@@ -95,7 +95,7 @@ odglosyZwierzat.pies();
 odglosyZwierzat.kaczka();
 ```
 
-(Możesz zauważyć, że ten przykładowy kod nie zadziała - wynika to z tego, że zmienna `hau` jest używana zanim zostanie do niej przypisana funkcja. Kod zadziała, jeżeli przeniesiesz zmienną `hau` na sam początek kodu. Jeżeli chcesz dowiedzieć się czegoś więcej na ten temat i dlaczego ten problem nie dotyczy funkcji `miau`, poczytaj o hoistingu tutaj <https://developer.mozilla.org/pl/docs/Glossary/Hoisting> ).
+(Możesz zauważyć, że ten przykładowy kod nie zadziała - wynika to z tego, że zmienna `hau` jest używana zanim zostanie do niej przypisana funkcja. Kod zadziała, jeżeli przeniesiesz zmienną `hau` na sam początek kodu. Jeżeli chcesz dowiedzieć się czegoś więcej na ten temat i dlaczego ten problem nie dotyczy funkcji `miau`, poczytaj o _hoistingu_ tutaj <https://developer.mozilla.org/pl/docs/Glossary/Hoisting> ).
 
 ## Łączenie funkcji i właściwości
 
@@ -109,7 +109,7 @@ W tej jednej linijce bardzo wiele się dzieje.
 
 `document.getElementById(‘przycisk’)` zwraca nam obiekt `Element`, tak więc możemy od razu coś z nim zrobić. Jak pewnie pamiętasz, kiedy wywołamy funkcję, która coś zwraca, dostaniemy w rezultacie to, co nasza funkcja zwróciła.
 
-Łączenie ze sobą kilku wywołań funkcji i odwołań do właściwości obiektu to property chaining lub function chaining (czyli po polsku po prostu łączenie właściwości lub łączenie funkcji). Z czasem nabierzesz wyczucia, kiedy warto z tego korzystać, a kiedy nasz "łańcuszek" lepiej rozbić na kilka mniejszych części.
+Łączenie ze sobą kilku wywołań funkcji i odwołań do właściwości obiektu to _property chaining_ lub _function chaining_ (czyli po polsku po prostu łączenie właściwości lub łączenie funkcji). Z czasem nabierzesz wyczucia, kiedy warto z tego korzystać, a kiedy nasz "łańcuszek" lepiej rozbić na kilka mniejszych części.
 
 I odnosząc to do naszego kodu powyżej - moglibyśmy go równie dobrze zapisać jako:
 

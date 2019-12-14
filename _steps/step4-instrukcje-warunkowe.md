@@ -15,8 +15,8 @@ Najpopularniejszą instrukcją jest wyrażenie `if`.
 
 Spójrz na przykład poniżej - sprawdzamy, czy użytkownik podał swoje imię i jeżeli tego nie zrobił, ustawiamy odpowiednią treść wiadomości z błędem.
 
-```Javascript
-if(imie == ''){
+```javascript
+if (imie == '') {
   wiadomoscOBledzie = 'Musisz podać swoje imię!';
 }
 ```
@@ -24,14 +24,16 @@ if(imie == ''){
 `if` składa się z dwóch części:
 
 - warunku w nawiasach okrągłych (możesz sobie wyobrazić, że to pytanie, które zadajemy naszemu kodowi, na przykład _"Czy imię użytkownika to pusty string?"_),
-- kodu w nawiasach klamerkowych, zawierającego instrukcje, które mają się wykonać, jeżeli nasz warunek jest prawdziwy (czyli jeżeli odpowiedzią na nasze pytanie jest _"Tak"_).
+- kodu w nawiasach klamrowych, zawierającego instrukcje, które mają się wykonać, jeżeli nasz warunek jest prawdziwy (czyli jeżeli odpowiedzią na nasze pytanie jest _"Tak"_).
 
 Ewentualnie na końcu możesz dodać też `else`, który określa, jaki kod się wykona, jeżeli nasz warunek nie zostanie spełniony.
 
 Warunki przyjmują wartość wyrażeń logicznych, czyli tzw. **booleanów**.
-Boolean to takie wyrażenie, którego wartość zostaje oszacowana jako `true` (prawdziwa) lub `false` (fałszywa) dzięki użyciu **operatorów warunkowych**.
+Boolean to takie wyrażenie, które może przyjąć jedną z dwóch wartości: `true` (prawdziwa) lub `false` (fałszywa), dzięki użyciu **operatorów warunkowych**.
 
 Operator warunkowy, którego użyliśmy w powyższym przykładzie to **operator równości**, czyli **A jest równe B**. Jeżeli wartości po jego obu stronach są uznawane za takie same, warunek uznawany jest za prawdziwy (przyjmuje wartość `true`). Jeżeli wartości po obu stronach są różne, warunek nie jest uznawany za prawdziwy i przyjmuje wartość `false`.
+
+<!-- Warto byłoby w tym miejscu omówić różnicę między `=` a `==` -->
 
 ## Używanie operatorów porównania
 
@@ -45,15 +47,15 @@ Najpierw dodajmy miejsce, w którym podamy swoje imię:
 
 A teraz zmodyfikujmy nasz kod, dzięki czemu nasze funkcje `przyjdz` i `odejdz` zobaczą, jakie imię wpisaliśmy i użyją go w wiadomości.
 
-```JavaScript
-function przyjdz(){
+```javascript
+function przyjdz() {
   let imie = document.getElementById('inputZImieniem').value;
-  wiadomosc = 'Witaj '+imie+'!';
+  wiadomosc = 'Witaj, '+imie+'!';
 }
 
-function odejdz(){
+function odejdz() {
   let imie = document.getElementById('inputZImieniem').value;
-  wiadomosc = 'Szerokiej drogi '+imie+'!';
+  wiadomosc = 'Szerokiej drogi, '+imie+'!';
 }
 ```
 
@@ -66,29 +68,27 @@ Ale co jeśli nie podasz żadnego imienia? W wiadomości zostanie puste miejsce,
 Dodajmy do naszego kodu instrukcję warunkową, która zapobiegnie takiej sytuacji.
 
 ```Javascript
-function przyjdz(){
+function przyjdz() {
   let imie = document.getElementById('inputZImieniem').value;
-  if(imie == ''){
-    wiadomosc = "Witaj tajemniczy nieznajomy!  Jak masz na imię?";
-  }
-  else {
-    wiadomosc = 'Witaj '+imie+'!';
+  if (imie == '') {
+    wiadomosc = "Witaj, tajemniczy nieznajomy! Jak masz na imię?";
+  } else {
+    wiadomosc = 'Witaj, '+imie+'!';
   }
 }
 
-function odejdz(){
+function odejdz() {
   let imie = document.getElementById('inputZImieniem').value;
-  if(imie == ''){
+  if (imie == '') {
     wiadomosc = 'Szerokiej drogi tajemniczy nieznajomy!';
-  }
-  else {
+  } else {
     wiadomosc = 'Szerokiej drogi '+imie+'!';
   }
 }
 ```
 
 Jak widzisz, używamy tutaj instrukcji `else`. Jeżeli `imie` jest pustym stringiem, nasza wiadomość nie będzie go używała.
-Ale jeżeli nasze `imie` nie będzie pustym stringiem, wykonany zostanie kod znajdujący się w bloku `else`, który ustawi wiadomość, dodając do niej podane przez użytkownika imię (za pomocą znanej ci już konkatenacji - znaku `+`).
+Ale w przeciwnym wypadku, jeżeli nasze `imie` nie będzie pustym stringiem, wykonany zostanie kod znajdujący się w bloku `else`, który ustawi wiadomość, dodając do niej podane przez użytkownika imię (za pomocą znanej Ci już konkatenacji - znaku `+`).
 
 Teraz nasze funkcje `przyjdz` i `odejdz` mogą się wykonać na dwa różne sposoby.
 
@@ -152,7 +152,7 @@ Tak samo jak w przypadku operatora `&&`, używając operatora `||` możesz łąc
 W przeciwieństwie do operatorów `&&` i `||`, negacja logiczna umieszczana jest przed wyrażeniem, żeby odwrócić jego wartość logiczną (z `true` na `false` albo z `false` na `true`).
 
 ```Javascript
-if(!zgodaUzytkownika){
+if (!zgodaUzytkownika) {
 
 }
 ```
@@ -165,7 +165,7 @@ Możesz połączyć ze sobą kilka operatorów logicznych w jednym wyrażeniu, a
 
 I tak, przykładowo, załóżmy, że chcemy stworzyć formularz, w którym:
 
-- użytkownik ma podać swój wiek (zmienna `age` - liczba),
+- użytkownik ma podać swój wiek (zmienna `wiek` - liczba),
 - użytkownik musi wyrazić zgodę na warunki korzystania z serwisu (zmienna `zgodaUzytkownika` - boolean),
 - jeżeli użytkownik ma mniej niż osiemnaście lat, zgodę na warunki korzystania z serwisu musi wyrazić też jego rodzic (zmienna `zgodaRodzica` - boolean).
 

@@ -41,6 +41,7 @@ kot.waga = kot.waga - 0.2;
 
 console.log(kot.imie + " naprawdę nienawidzi " + kot.nienawidzi);
 ```
+<!-- Czy `console.log` było gdzieś wcześniej wytłumaczone? -->
 
 Jeżeli spróbujesz odwołać się do właściwości, która nie istnieje, jej wartością będzie `undefined`.
 

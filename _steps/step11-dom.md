@@ -5,7 +5,7 @@ title: DOM
 permalink: step11/
 ---
 
-## `Czym jest DOM?`
+## Czym jest DOM?
 
 DOM, nie dom 🏠
 
@@ -13,7 +13,7 @@ DOM to skrót od Document Object Model.
 
 Kiedy strona się ładuje, przeglądarka nie wyświetla bezpośrednio kodu HTML. Zamiast tego odczytuje go i tworzy jego odwzorowanie na stronie. Właśnie te elementy odwzorowujące HTML nazywamy DOMem.
 
-Kiedy kod javascript zmienia jakiś element strony, nie zmienia się kod HTML, a tylko DOM.
+Kiedy kod Javascript zmienia jakiś element strony, nie zmienia się kod HTML, a tylko DOM.
 
 Uruchom któryś z naszych poprzenich przykładów (na przykład ten z lekcji 1) i otwórz w przeglądarce narzędzia deweloperskie (a w nich zakładkę Elements lub Inspector w Firefoxie).
 
@@ -45,7 +45,7 @@ let naglowek = document.getElementById("naglowek");
 
 <https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById>
 
-Do tego samego możesz używać też `document.querySelector()`, przy czym wtedy w nawiasie musisz podać szukany selektor css. `document.querySelector()` zwróci wtedy pierwszy znaleziony element.
+Do tego samego możesz używać też `document.querySelector()`, przy czym wtedy w nawiasie musisz podać szukany selektor CSS. `document.querySelector()` zwróci wtedy pierwszy znaleziony element.
 
 ```javascript
 let naglowek = document.querySelector("h2.artykul-naglowek");
@@ -69,7 +69,7 @@ Pobieranie jednego elementu jest bardzo przydatne, ale co, jeśli chcesz operowa
 
 <https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll>
 
-Każda z tych funkcji zwraca obiekt zwany NodeList (listą węzłów). Przypomina on tablicę, przy czym każdy obiekt w nim jest elementem ze strony.
+Każda z tych funkcji zwraca obiekt zwany `NodeList` (listą węzłów). Przypomina on tablicę, przy czym każdy obiekt w nim jest elementem ze strony.
 
 ## Modyfikowanie elementów
 

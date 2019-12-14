@@ -17,7 +17,7 @@ Te dane mogą mieć różne typy - mogą nimi być liczby, tekst itd. Dla przyk�
 
 **Wyrażeniem** jest łączenie kilku danych i przeprowadzanie na nich działań matematycznych, by dostać nową wartość.
 
-To wszystko jest na razie dosyć abstrakcyjne, więc zróbmy kilka przykładów w **narzędziach deweloperskich** (po angielsku developer/dev tools) twojej przeglądarki.
+To wszystko jest na razie dosyć abstrakcyjne, więc zróbmy kilka przykładów w **narzędziach deweloperskich** (po angielsku developer/dev tools) Twojej przeglądarki.
 
 ## Narzędzia deweloperskie przeglądarki (dev tools)
 
@@ -29,15 +29,15 @@ Jednym z takich narzędzi jest konsola, która ma dwie podstawowe funkcje. Po pi
 
 - Chrome i Firefox
   - Windows/Linux: `Ctrl`+`Shift`+`i`
-  - MacOS: `CMD`+`Option`+`i`
+  - MacOS: `Cmd`+`Option`+`i`
 - Safari
-  - MacOS: `CMD`+`option`+`i`
+  - MacOS: `Cmd`+`Option`+`i`
 - Edge
   - Windows: `F12` lub `Ctrl`+`Shift`+`i`
 
-Narzędzia deweloperskie w Safari są domyślnie wyłączone, ale możesz je uruchomić wchodząc w _Safari -> Preferencje -> Zaawansowane_ i zaznaczając tam okno _"Pokazuj menu Programowanie na pasku menu"_.
+Narzędzia deweloperskie w Safari są domyślnie wyłączone, ale możesz je uruchomić, wchodząc w _Safari -> Preferencje -> Zaawansowane_ i zaznaczając tam pole _"Pokazuj menu Programowanie na pasku menu"_.
 
-Kiedy już otworzysz Narzędzia deweloperskie, otwórz w nich okienko o nazwie Console (po polsku to po prostu konsola).
+Kiedy już otworzysz Narzędzia deweloperskie, przejdź do okna o nazwie Console (po polsku to po prostu konsola).
 
 ![Chrome Developer Tools](../assets/step-2a.png){:title="Chrome Developer Tools" class="img-responsive"}
 
@@ -76,7 +76,7 @@ Dlaczego używamy `*` i `/` zamiast zwykłych symboli mnożenia i dzielenia?
 
 Pierwsze klawiatury komputerowe były wzorowane na mechanicznych maszynach do pisania.
 
-Osoby, które korzystły z takich maszyn nie potrzebowały ani symbolu mnożenia (bo mogły po prostu używać znaku `x`), ani symbolu dzielenia (bo mogły wpisać po prostu `-` i potem nadpisać na nim `:`, albo po prostu użyć samego znaku `:`). Ułamki z kolei zapisywano jako `1/2` czy `3/4`.
+Osoby, które korzystły z takich maszyn, nie potrzebowały ani symbolu mnożenia (bo mogły po prostu używać znaku `x`), ani symbolu dzielenia (bo mogły wpisać po prostu `-` i potem nadpisać na nim `:`, albo po prostu użyć samego znaku `:`). Ułamki z kolei zapisywano jako `1/2` czy `3/4`.
 
 (Co prawda, maszyny z wyższej półki miewały specjalne klawisze z symbolami mnożenia i dzielenia, ale jakoś nigdy się to nie przyjęło).
 
@@ -92,7 +92,7 @@ Przyjrzyj się kodowi, który już napisaliśmy. W jaki sposób napisaliśmy wia
 document.getElementById("okno").innerText = "Naciśnięto przycisk!";
 ```
 
-Kiedy otoczymy jakieś znaki cudzysłowem, tworzymy daną typu **string**, czyli po prostu ciąg liter, liczb czy innych znaków. Możesz wyobrazić sobie string jako banner, na którym napisana jest jakaś treść.
+Kiedy otoczymy jakieś znaki cudzysłowem, tworzymy daną typu **string**, czyli po prostu ciąg liter, liczb czy innych znaków. Możesz wyobrazić sobie string jako banner, na którym napisana jest jakiś tekst.
 
 ![Bunting](../assets/bunting-string.jpg){:title="Bunting" class="img-responsive imgbox"}
 
@@ -112,7 +112,7 @@ Wpisz `'Kot' / 'Pies'`.
 
 Wynikiem takiego działania jest specjalna wartość - **NaN**, co oznacza **Not a Number** (po polsku możesz to przetłumaczyć jako _Nie jest liczbą_). Jak widzisz, nie wszystkie działania matematyczne mogą być wykonane na pewnych typach danych - dlatego też wartości takie jak `NaN` są używane do wyłapywania błędów w kodzie.
 
-Ale wróćmy jeszcze do typów danych - poza liczbami i stringami wyróżniamy też między innymi **tablice**, **booleany** (czyli wyrażenia logiczne) i **obiekty**.
+Ale wróćmy jeszcze do typów danych - poza liczbami i stringami wyróżniamy też między innymi **tablice**, **booleany** (czyli wartości logiczne) i **obiekty**.
 
 Omówimy każde z nich, kiedy natkniemy się na nie w kodzie.
 
@@ -123,7 +123,7 @@ Na razie mówiliśmy jedynie o przeprowadzaniu operacji na wartościach tego sam
 Istnieją dwie proste zasady przeprowadzania takich działań:
 
 1. Jeżeli operatorem jest `+`, liczby zostają przekonwertowane na string i wykonywana jest konkatenacja (na przykład: `"Ania" + 2` zostanie przekonwertowane na `"Ania" + "2"` i w wyniku konkatenacji uzyskamy `"Ania2"`).
-2. W każdym innym przypadku javascript próbuje przekonwertować string na liczbę i wykonać działanie matematyczne. Jeżeli string nie może zostać zmieniony na liczbę, jako wynik zostaniesz znany ci już `NaN`.
+2. W każdym innym przypadku Javascript próbuje przekonwertować string na liczbę i wykonać działanie matematyczne. Jeżeli string nie może zostać zmieniony na liczbę, jako wynik zostaniesz znany Ci już `NaN`.
 
 Takie zmiany typów danych nazywamy **konwersją typów**.
 
