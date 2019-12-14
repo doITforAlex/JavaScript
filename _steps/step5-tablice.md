@@ -46,13 +46,13 @@ Pustą tablicę tworzymy używając nawiasów kwadratowych.
 
 Na początku swojego tagu `<script>` stwórz zmienną `imiona` i przypisz do niej początkową wartość - pustą tablicę.
 
-```JavaScript
+```javascript
 let imiona = [];
 ```
 
 Oczywiście, jeżeli chcesz, możesz stworzyć tablicę, która będzie już zawierała jakieś elementy - oddzielaj je wtedy od siebie przecinkami.
 
-```JavaScript
+```javascript
 let imiona = ["Karolina", "Asia"];
 ```
 

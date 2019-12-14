@@ -240,7 +240,7 @@ Kiedy funkcja natyka się na słowo kluczowe `return`, natychmiast kończy dzia�
 
 Wywołajmy teraz tę funkcję w funkcji `ustawKolor` i wyświetlmy efekty w konsoli. W tym celu na końcu ciała funkcji `ustawKolor` dodaj poniższą linijkę kodu:
 
-```JavaScript
+```javascript
 console.log(pokazKomunikat(kolor, idElementu));
 ```
 
