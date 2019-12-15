@@ -207,13 +207,12 @@ Zmieńmy w takim razie ciało naszej funkcji `ustawKolor`:
 ```javascript
 function ustawKolor(kolor, idElementu) {
   if (idElementu === undefined) {
-    document.bgColor = kolor;
+    document.body.style.backgroundColor = kolor;
   } else {
     document.getElementById(idElementu).style.backgroundColor = kolor;
   }
 }
 ```
-<!-- Nie lepiej `document.body.style.backgroundColor`? -->
 
 Teraz, jeżeli nasze `idElementu` ma wartość undefined, tło strony zmieni się na wybrany przez nas `kolor`.
 W przeciwnym razie zmieni się kolor wybranego przez nas elementu.
