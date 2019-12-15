@@ -36,11 +36,22 @@ Stwórz nowy plik z następującym kodem HTML.
   <head>
     <meta charset="utf-8" />
     <title>Warsztaty z JSa!</title>
+    <style>
+#kolory {
+  padding:10px;
+  margin: 15px;
+  border:1px solid grey;
+  background-color: #ffffff;
+}
+
+#rzad1, #rzad2 {
+  width:100%;
+  height:100px;
+}    
+    </style>
   </head>
   <body>
-    <div
-      style="padding:10px; margin: 15px; border:1px solid grey; background-color:#ffffff"
-    >
+    <div id="kolory">
       Tło:
       <input id="inputKolorTla" name="tlo" type="color" value="#ffffff" />
       Rząd 1:
@@ -49,16 +60,12 @@ Stwórz nowy plik z następującym kodem HTML.
       <input id="inputKolorRzad2" name="rzad2" type="color" value="#ffffff" />
     </div>
     <div id="komunikat"></div>
-    <div id="rzad1" style="width:100%;height:100px"></div>
-    <div id="rzad2" style="width:100%;height:100px"></div>
+    <div id="rzad1"></div>
+    <div id="rzad2"></div>
   </body>
   <script></script>
 </html>
 ```
-<!-- Inline styles, serio?
-Skoro wszystko i tak ma identyfikatory, to czeemu by tego nie przenieść do bloku <style>?
-To może być nawet bardziej zrozumiałe dla uczestników, tym bardziej, że na warsztatach HTML/CSS
-w ogóle nie pojawił się atrybut style="...". -->
 
 Zapisz plik i otwórz go w przeglądarce.
 
@@ -79,28 +86,25 @@ Teraz w tagu `<script>` dodajmy kod, dzięki któremu po wyborze koloru, taki sa
 
 Tworzenie nowej funkcji nazywamy jej **deklarowaniem**.
 
-A więc, zadeklarujmy nową funkcję `zmianaKoloru`:
+A więc, zadeklarujmy nową funkcję `zmienKolor`:
 
 ```javascript
-function zmianaKoloru(event) {}
+function zmienKolor(event) {}
 ```
-<!-- Nie lepiej `zmienKolor`?
-We wszystkich poprzednich przykładach nazwy funkcji były w formie rozkazującej
-i tak się chyba zwykle pisze. -->
 
 Do deklarowania funkcji używamy:
 
 1. Słowa kluczowego `function`.
-2. Nazwy nowej funkcji, `zmianaKoloru`.
+2. Nazwy nowej funkcji, `zmienKolor`.
 3. Opcjonalnie listy parametrów w nawiasach okrągłych, `(event)` <!-- To sugeruje, że nawiasy też można opuścić -->
 4. Ciała funkcji w nawiasach klamerkowych, `{` `}`
 
-Funkcja `zmianaKoloru` jeszcze nic nie robi, ale i tak możemy ją już przypisać do wydarzenia `onchange` na każdym z naszych inputów.
+Funkcja `zmienKolor` jeszcze nic nie robi, ale i tak możemy ją już przypisać do wydarzenia `onchange` na każdym z naszych inputów.
 
 ```javascript
-document.getElementById("inputKolorTla").onchange = zmianaKoloru;
-document.getElementById("inputKolorRzad1").onchange = zmianaKoloru;
-document.getElementById("inputKolorRzad2").onchange = zmianaKoloru;
+document.getElementById("inputKolorTla").onchange = zmienKolor;
+document.getElementById("inputKolorRzad1").onchange = zmienKolor;
+document.getElementById("inputKolorRzad2").onchange = zmienKolor;
 ```
 
 ## Parametry i argumenty
@@ -115,15 +119,15 @@ document.getElementById("inputKolorRzad2").onchange = zmianaKoloru;
 https://stackoverflow.com/questions/156767/whats-the-difference-between-an-argument-and-a-parameter
 -->
 
-Nasza funkcja `zmianaKoloru` ma jeden parametr, `event` (po polsku _zdarzenie_).
+Nasza funkcja `zmienKolor` ma jeden parametr, `event` (po polsku _zdarzenie_).
 Funkcje powiązane ze zdarzeniami są wykonywane, kiedy dochodzi do określonego zdarzenia. Kiedy to się wydarzy, przeglądarka przekaże informacje o tym wydarzeniu jako argument funkcji.
 
 Ale czym tak właściwie jest `event`? Umieśćmy w najszej funkcji `console.log`, żeby się przekonać.
 
-Funkcja `zmianaKoloru` powinna teraz wyglądać tak:
+Funkcja `zmienKolor` powinna teraz wyglądać tak:
 
 ```javascript
-function zmianaKoloru(event) {
+function zmienKolor(event) {
   console.log(event);
 }
 ```
@@ -141,12 +145,12 @@ Jak widzisz, obiekt `event` ma wiele właściwości, które szczegółowo go opi
 Zmieńmy więc nasz `console.log`, aby poznać więcej interesujących nas szczegółów.
 
 ```javascript
-function zmianaKoloru(event) {
+function zmienKolor(event) {
   console.log(event.target.name, event.target.value);
 }
 ```
 
-No dobrze, teraz nasza funkcja `zmianaKoloru` ma informacje, których potrzebuje - nazwę inputa i nowy kolor. Żeby uaktualnić nasz kolor, stworzymy jednak nową funkcję i ją stąd wywołamy.
+No dobrze, teraz nasza funkcja `zmienKolor` ma informacje, których potrzebuje - nazwę inputa i nowy kolor. Żeby uaktualnić nasz kolor, stworzymy jednak nową funkcję i ją stąd wywołamy.
 
 Zadeklarujmy szybko nową funkcję o pustym ciele:
 
@@ -156,30 +160,30 @@ function ustawKolor(kolor, element) {}
 
 Zauważ, że ma ona dwa parametry, `kolor` i `element`.
 
-Ale w jaki sposób mamy ją wywołać w funkcji `zmianaKoloru`?
+Ale w jaki sposób mamy ją wywołać w funkcji `zmienKolor`?
 
 ## Wywoływanie funkcji
 
 Wywoływanie funkcji jest naprawdę proste - po prostu podajesz nazwę funkcji, a za nią wpisujesz nawiasy okrągłe. Jeżeli chcesz przekazać do funkcji jakieś argumenty, wpisz je w tych nawiasach.
 
-A więc, zmieńmy funkcję `zmianaKoloru`, tak, by wywoływała funkcję `ustawKolor`, która na razie będzie tylko wyświetlała w konsoli swoje parametry.
+A więc, zmieńmy funkcję `zmienKolor`, tak, by wywoływała funkcję `ustawKolor`, która na razie będzie tylko wyświetlała w konsoli swoje parametry.
 
 ```javascript
 function ustawKolor(kolor, idElementu) {
   console.log(kolor, idElementu);
 }
 
-function zmianaKoloru(event) {
+function zmienKolor(event) {
   ustawKolor(event.target.value, event.target.name);
 }
 ```
 
 W taki sposób przekazujemy wartości z jednej funkcji do drugiej.
 
-Nasze funkcje jednak na razie jeszcze nie są zbyt przydatne. W tym celu dodajmy do funkcji `zmianaKoloru` kilka warunków:
+Nasze funkcje jednak na razie jeszcze nie są zbyt przydatne. W tym celu dodajmy do funkcji `zmienKolor` kilka warunków:
 
 ```javascript
-function zmianaKoloru(event) {
+function zmienKolor(event) {
   if (event.target.name === "tlo") {
     ustawKolor(event.target.value);
   } else {
@@ -203,13 +207,12 @@ Zmieńmy w takim razie ciało naszej funkcji `ustawKolor`:
 ```javascript
 function ustawKolor(kolor, idElementu) {
   if (idElementu === undefined) {
-    document.bgColor = kolor;
+    document.body.style.backgroundColor = kolor;
   } else {
     document.getElementById(idElementu).style.backgroundColor = kolor;
   }
 }
 ```
-<!-- Nie lepiej `document.body.style.backgroundColor`? -->
 
 Teraz, jeżeli nasze `idElementu` ma wartość undefined, tło strony zmieni się na wybrany przez nas `kolor`.
 W przeciwnym razie zmieni się kolor wybranego przez nas elementu.
@@ -263,7 +266,7 @@ Teraz, kiedy zmienisz kolor któregoś elementu, na stronie pojawi się o tym ad
 
 ![Final](../assets/step-7f.png){:title="Final" class="img-responsive"}
 
-Jeżeli chcesz, możesz przenieść tę ostatnią linijkę z funkcji `ustawKolor` do funkcji `zmianaKoloru`, ale to wymagałoby kilku małych zmian. Jak myślisz, jakich? Spróbuj to zrobić!
+Jeżeli chcesz, możesz przenieść tę ostatnią linijkę z funkcji `ustawKolor` do funkcji `zmienKolor`, ale to wymagałoby kilku małych zmian. Jak myślisz, jakich? Spróbuj to zrobić!
 
 #### Zadanie
 

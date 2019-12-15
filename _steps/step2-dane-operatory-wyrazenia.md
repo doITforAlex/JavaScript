@@ -59,7 +59,7 @@ Głównymi operatorami matematycznymi są:
 - `-`: odejmowanie
 - `*`: mnożenie
 - `/`: dzielenie
-- `MOD`: modulo, czyli reszta z dzielenia
+- `%`: modulo, czyli reszta z dzielenia
 
 I tak samo jak w matematyce, stosujemy tu **kolejność wykonywania działań** i możemy używać nawiasów `(` i `)`.
 
