@@ -36,11 +36,22 @@ Stwórz nowy plik z następującym kodem HTML.
   <head>
     <meta charset="utf-8" />
     <title>Warsztaty z JSa!</title>
+    <style>
+#kolory {
+  padding:10px;
+  margin: 15px;
+  border:1px solid grey;
+  background-color: #ffffff;
+}
+
+#rzad1, #rzad2 {
+  width:100%;
+  height:100px;
+}    
+    </style>
   </head>
   <body>
-    <div
-      style="padding:10px; margin: 15px; border:1px solid grey; background-color:#ffffff"
-    >
+    <div id="kolory">
       Tło:
       <input id="inputKolorTla" name="tlo" type="color" value="#ffffff" />
       Rząd 1:
@@ -49,16 +60,12 @@ Stwórz nowy plik z następującym kodem HTML.
       <input id="inputKolorRzad2" name="rzad2" type="color" value="#ffffff" />
     </div>
     <div id="komunikat"></div>
-    <div id="rzad1" style="width:100%;height:100px"></div>
-    <div id="rzad2" style="width:100%;height:100px"></div>
+    <div id="rzad1"></div>
+    <div id="rzad2"></div>
   </body>
   <script></script>
 </html>
 ```
-<!-- Inline styles, serio?
-Skoro wszystko i tak ma identyfikatory, to czeemu by tego nie przenieść do bloku <style>?
-To może być nawet bardziej zrozumiałe dla uczestników, tym bardziej, że na warsztatach HTML/CSS
-w ogóle nie pojawił się atrybut style="...". -->
 
 Zapisz plik i otwórz go w przeglądarce.
 
