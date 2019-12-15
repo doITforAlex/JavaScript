@@ -38,7 +38,7 @@ A teraz cały kod wrzuć do pliku `script.js`:
 function zrobCos() {
   document.getElementById("okno").innerText = "Naciśnięto przycisk!";
 }
-document.getElementById("przycisk").onClick = zrobCos;
+document.getElementById("przycisk").onclick = zrobCos;
 ```
 
 Atrybut `src` tagu `<script>` działa bardzo podobnie do atrybutu `src` tagu `<img>`.
